@@ -28,12 +28,11 @@
   .cards{margin-top:24px;display:flex;flex-direction:column;gap:16px;}
   .card{
     background:#fff;border:1px solid var(--line);border-radius:14px;
-    padding:18px 18px 16px;box-shadow:0 2px 10px rgba(31,58,95,.06);
-    border-top:6px solid var(--navy);
+    box-shadow:0 2px 10px rgba(31,58,95,.06);overflow:hidden;
   }
-  .card.coral{border-top-color:var(--coral);}
-  .card.teal{border-top-color:var(--teal);}
-  .card.amber{border-top-color:var(--amber);}
+  .thumb{height:210px;display:flex;align-items:center;justify-content:center;}
+  .thumb img{height:100%;width:100%;object-fit:contain;display:block;}
+  .body{padding:16px 18px;}
   .tag{
     display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;
     padding:2px 10px;border-radius:999px;color:#fff;background:var(--navy);
@@ -64,35 +63,47 @@
 
   <div class="cards">
     <div class="card coral">
+      <div class="thumb" style="background:#16223F;"><img src="assets/thumb-book.webp" alt="『空の郵便が届くまで』表紙"></div>
+      <div class="body">
       <span class="tag">声の出る本</span>
       <h2>『空の郵便が届くまで』</h2>
       <p>表紙を開くと、声がついてくる。ページをめくる体験そのままに、朗読が流れる単行本形式の作品です。まずは第1章だけでもどうぞ。</p>
       <p class="meta">ジャンル：朗読付き単行本 ／ 第1章 約5分〜</p>
       <a class="btn" href="https://tanabata-soft.github.io/df0vnp1dkf/">開いて聞く</a>
+      </div>
     </div>
 
     <div class="card">
+      <div class="thumb" style="background:#14101F;"><img src="assets/thumb-blackjack.png" alt="Bust or Die アイコン"></div>
+      <div class="body">
       <span class="tag">ゲーム</span>
       <h2>Bust or Die</h2>
       <p>ブラックジャック×ローグライクRPG。21を超えたら終わりの緊張感に、育成と運命の分岐を重ねた一作。1プレイ数分で遊べます。</p>
       <p class="meta">ジャンル：カードゲーム ／ 1プレイ 数分〜</p>
       <a class="btn" href="https://mmishina-art.github.io/simple_blackjack/">遊んでみる</a>
+      </div>
     </div>
 
     <div class="card teal">
+      <div class="thumb" style="background:#3D2B1A;"><img src="assets/thumb-novel.png" alt="分岐ノベル アイコン"></div>
+      <div class="body">
       <span class="tag">ゲーム</span>
       <h2>選択肢で分岐する、朗読付きノベル</h2>
       <p>読み進める要所で選択肢が現れ、物語が枝分かれしていくノベルゲーム集。学校、図書室、カフェ――舞台の異なる短編が8作入っています。</p>
       <p class="meta">ジャンル：分岐ノベル ／ 1話 10〜20分</p>
       <a class="btn" href="https://mmishina-art.github.io/simple_visual_novel/">読み始める</a>
+      </div>
     </div>
 
     <div class="card amber">
+      <div class="thumb" style="background:#0B0E18;"><img src="assets/thumb-cd.jpg" alt="『ニコラケイジと木曽と私』ジャケット"></div>
+      <div class="body">
       <span class="tag">デジタルCD</span>
       <h2>『ニコラケイジと木曽と私』</h2>
       <p>配信ではなく「所有する」ためのデジタルCDアルバム。ジャケットを眺めて、置いて、再生する――CDを持つ感覚をアプリで再現しました。曲もAI生成です。</p>
       <p class="meta">ジャンル：音楽アルバム ／ 全11トラック</p>
       <a class="btn" href="https://tanabata-soft.github.io/d3dk4hgn9m/">ジャケットを開く</a>
+      </div>
     </div>
   </div>
 
