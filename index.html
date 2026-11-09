@@ -25,7 +25,13 @@
   h1 .accent{color:var(--coral);}
   .lead{font-size:14px;color:#43536A;}
   .note{font-size:12px;color:var(--coral);font-weight:700;margin-top:6px;}
-  .cards{margin-top:24px;display:flex;flex-direction:column;gap:16px;}
+  .sec{
+    margin:30px 0 4px;font-size:15px;font-weight:800;color:var(--navy);
+    letter-spacing:.1em;display:flex;align-items:center;gap:10px;
+  }
+  .sec::after{content:"";flex:1;height:1px;background:var(--line);}
+  .sec .cnt{font-size:11px;color:#7A8794;letter-spacing:0;font-weight:700;}
+  .cards{margin-top:14px;display:flex;flex-direction:column;gap:16px;}
   .card{
     background:#fff;border:1px solid var(--line);border-radius:14px;
     box-shadow:0 2px 10px rgba(31,58,95,.06);overflow:hidden;
@@ -61,26 +67,38 @@
     <p class="note">※勤務時間外のプライベートな取り組みで制作したものです</p>
   </header>
 
+  <h2 class="sec">ゲーム <span class="cnt">4作品</span></h2>
   <div class="cards">
-    <div class="card coral">
-      <div class="thumb" style="background:#16223F;"><img src="assets/thumb-book.webp" alt="『空の郵便が届くまで』表紙"></div>
+    <div class="card">
+      <div class="thumb" style="background:#F7F1DE;"><img src="assets/thumb-dino.png" alt="ダイノラン アイコン"></div>
       <div class="body">
-      <span class="tag">声の出る本</span>
-      <h2>『空の郵便が届くまで』</h2>
-      <p>表紙を開くと、声がついてくる。ページをめくる体験そのままに、朗読が流れる単行本形式の作品です。まずは第1章だけでもどうぞ。</p>
-      <p class="meta">ジャンル：朗読付き単行本 ／ 第1章 約5分〜</p>
-      <a class="btn" href="https://tanabata-soft.github.io/df0vnp1dkf/">開いて聞く</a>
+      <span class="tag">ゲーム</span>
+      <h2>ダイノラン</h2>
+      <p>自動で走る恐竜をタップでジャンプさせ、サボテンや岩をよけてゴールを目指す横スクロールランゲーム。押し続ける長さでジャンプの高さが変わります。</p>
+      <p class="meta">ジャンル：ランゲーム ／ 全10ステージ</p>
+      <a class="btn" href="https://mmishina-art.github.io/simple_dino/">遊んでみる</a>
       </div>
     </div>
 
     <div class="card">
-      <div class="thumb" style="background:#14101F;"><img src="assets/thumb-blackjack.png" alt="Bust or Die アイコン"></div>
+      <div class="thumb" style="background:#151133;"><img src="assets/thumb-chess.png" alt="チェスクエスト アイコン"></div>
       <div class="body">
       <span class="tag">ゲーム</span>
-      <h2>Bust or Die</h2>
-      <p>ブラックジャック×ローグライクRPG。21を超えたら終わりの緊張感に、育成と運命の分岐を重ねた一作。1プレイ数分で遊べます。</p>
-      <p class="meta">ジャンル：カードゲーム ／ 1プレイ 数分〜</p>
-      <a class="btn" href="https://mmishina-art.github.io/simple_blackjack/">遊んでみる</a>
+      <h2>チェスクエスト</h2>
+      <p>ファンタジーRPG風のチェスゲーム。駒の動かし方から学べるチュートリアルと、10人の守り手に挑むストーリーモード「影の塔」が入っています。</p>
+      <p class="meta">ジャンル：チェスRPG ／ ストーリー＋フリー対戦</p>
+      <a class="btn" href="https://mmishina-art.github.io/simple_chess/">遊んでみる</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumb" style="background:#16110D;"><img src="assets/thumb-shogi.png" alt="戦国将棋 アイコン"></div>
+      <div class="body">
+      <span class="tag">ゲーム</span>
+      <h2>戦国将棋 ―信長・秀吉・家康―</h2>
+      <p>戦国の合戦を将棋で追体験しながら日本史が学べるアプリ。三英雄の物語・全24話に、対局後の「歴史メモ」付き。ルールのチュートリアルもあります。</p>
+      <p class="meta">ジャンル：将棋／歴史 ／ 全24話</p>
+      <a class="btn" href="https://mmishina-art.github.io/simple_shogi/">遊んでみる</a>
       </div>
     </div>
 
@@ -94,15 +112,68 @@
       <a class="btn" href="https://mmishina-art.github.io/simple_visual_novel/">読み始める</a>
       </div>
     </div>
+  </div>
+
+  <h2 class="sec">ノベル <span class="cnt">1作品</span></h2>
+  <div class="cards">
+    <div class="card coral">
+      <div class="thumb" style="background:#16223F;"><img src="assets/thumb-book.webp" alt="『空の郵便が届くまで』表紙"></div>
+      <div class="body">
+      <span class="tag">声の出る本</span>
+      <h2>『空の郵便が届くまで』</h2>
+      <p>表紙を開くと、声がついてくる。ページをめくる体験そのままに、朗読が流れる単行本形式の作品です。まずは第1章だけでもどうぞ。</p>
+      <p class="meta">ジャンル：朗読付き単行本 ／ 第1章 約5分〜</p>
+      <a class="btn" href="https://tanabata-soft.github.io/df0vnp1dkf/">開いて聞く</a>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sec">音楽 <span class="cnt">デジタルシングルCD 3作品</span></h2>
+  <div class="cards">
+    <div class="card amber">
+      <div class="thumb" style="background:#9F2B40;"><img src="assets/thumb-s001.jpg" alt="『チョコミントの残像』ジャケット"></div>
+      <div class="body">
+      <span class="tag">デジタルシングルCD</span>
+      <h2>『チョコミントの残像』</h2>
+      <p>配信ではなく「所有する」ためのデジタルシングルCD。8cmシングルの短冊ジャケットをアプリで再現しました。曲もAI生成です。</p>
+      <p class="meta">NK-S001 ／ 表題曲＋カップリング</p>
+      <a class="btn" href="https://tanabata-soft.github.io/zkbphekffz/">ジャケットを開く</a>
+      </div>
+    </div>
 
     <div class="card amber">
-      <div class="thumb" style="background:#0B0E18;"><img src="assets/thumb-cd.jpg" alt="『ニコラケイジと木曽と私』ジャケット"></div>
+      <div class="thumb" style="background:#63656B;"><img src="assets/thumb-s002.jpg" alt="『友達のままじゃ』ジャケット"></div>
       <div class="body">
-      <span class="tag">デジタルCD</span>
-      <h2>『ニコラケイジと木曽と私』</h2>
-      <p>配信ではなく「所有する」ためのデジタルCDアルバム。ジャケットを眺めて、置いて、再生する――CDを持つ感覚をアプリで再現しました。曲もAI生成です。</p>
-      <p class="meta">ジャンル：音楽アルバム ／ 全11トラック</p>
-      <a class="btn" href="https://tanabata-soft.github.io/d3dk4hgn9m/">ジャケットを開く</a>
+      <span class="tag">デジタルシングルCD</span>
+      <h2>『友達のままじゃ』</h2>
+      <p>終電前のバス停とホームを歌う2曲に、ボーナストラックを加えたデジタルシングルCD。ジャケットを眺めて、置いて、再生する感覚を大切にしました。</p>
+      <p class="meta">NK-S002 ／ 2曲＋ボーナストラック</p>
+      <a class="btn" href="https://tanabata-soft.github.io/t8k4cdrpv9/">ジャケットを開く</a>
+      </div>
+    </div>
+
+    <div class="card amber">
+      <div class="thumb" style="background:#F9A96A;"><img src="assets/thumb-s003.jpg" alt="『京葉線の午後』ジャケット"></div>
+      <div class="body">
+      <span class="tag">デジタルシングルCD</span>
+      <h2>『京葉線の午後』</h2>
+      <p>京葉線の午後と千葉の海を歌う2曲を収めたデジタルシングルCD。曲もジャケットもAIと作りました。</p>
+      <p class="meta">NK-S003 ／ 表題曲＋カップリング</p>
+      <a class="btn" href="https://tanabata-soft.github.io/0mk7gjcg5n/">ジャケットを開く</a>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sec">ツール <span class="cnt">1作品</span></h2>
+  <div class="cards">
+    <div class="card teal">
+      <div class="thumb" style="background:#0F172A;"><img src="assets/thumb-badminton.png" alt="バド乱数表 アイコン"></div>
+      <div class="body">
+      <span class="tag">ツール</span>
+      <h2>バド乱数表（バドミントン対戦表）</h2>
+      <p>バドミントンのダブルスの組み合わせを、公平に自動で作るアプリ。休憩の管理・得点板・MVP表彰つきで、体育館の現場でそのまま使えます。</p>
+      <p class="meta">ジャンル：スポーツ支援ツール</p>
+      <a class="btn" href="https://tanabata-soft.github.io/badminton_pairing/">使ってみる</a>
       </div>
     </div>
   </div>
