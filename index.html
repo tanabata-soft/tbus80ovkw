@@ -39,7 +39,15 @@
   }
   .card.special{
     border:2px solid var(--amber);
-    box-shadow:0 4px 16px rgba(242,160,7,.20);
+    box-shadow:0 6px 20px rgba(242,160,7,.28);
+    background:#FFFBF1;
+  }
+  .card.special .thumb{height:236px;position:relative;}
+  .card.special h2{font-size:21px;}
+  .special-badge{
+    position:absolute;top:10px;left:10px;background:var(--amber);color:#fff;
+    font-size:12px;font-weight:800;letter-spacing:.06em;
+    padding:3px 10px;border-radius:999px;box-shadow:0 2px 6px rgba(0,0,0,.25);
   }
   .thumb{height:210px;display:flex;align-items:center;justify-content:center;}
   .thumb img{height:100%;width:100%;object-fit:contain;display:block;}
@@ -75,7 +83,7 @@
   <h2 class="sec">特別枠</h2>
   <div class="cards">
     <div class="card amber special">
-      <div class="thumb" style="background:#101A30;"><img src="assets/thumb-s006.jpg" alt="『SHIFT AWARD 2026 応援歌』ジャケット"></div>
+      <div class="thumb" style="background:#101A30;"><span class="special-badge">★ 特別枠</span><img src="assets/thumb-s006.jpg" alt="『SHIFT AWARD 2026 応援歌』ジャケット"></div>
       <div class="body">
       <span class="tag">デジタルシングルCD・特別編</span>
       <h2>『SHIFT AWARD 2026 応援歌』</h2>
